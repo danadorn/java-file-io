@@ -10,8 +10,8 @@ public class Main {
 
         FileService fileService = new FileService();
         File file = new File("/home/dorndana/Pictures/1.png");
-        File fileq1 = new File("/home/dorndana/Pictures/2.png");
-        Object result = fileService.uploadSingleFile(file);
+        File file1 = new File("/home/dorndana/Pictures/2.png");
+        Object result = fileService.multiplesUpload(new File[] {file, file1});
         System.out.println(result);
     }
 }
